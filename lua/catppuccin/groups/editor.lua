@@ -57,8 +57,12 @@ function M.get()
 		SpellCap = { sp = C.yellow, style = { "undercurl" } }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
 		SpellLocal = { sp = C.blue, style = { "undercurl" } }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
 		SpellRare = { sp = C.green, style = { "undercurl" } }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
-		StatusLine = { fg = C.text, bg = O.transparent_background and C.none or C.mantle }, -- status line of current window
-		StatusLineNC = { fg = C.surface1, bg = O.transparent_background and C.none or C.mantle }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+		-- StatusLine = { fg = C.text, bg = O.transparent_background and C.none or C.mantle }, -- status line of current window
+		-- StatusLineNC = { fg = C.surface1, bg = O.transparent_background and C.none or C.mantle }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+	
+		StatusLine = { fg = C.text, bg = C.red, style = { "bold" }  }, -- status line of current window
+		StatusLineNC = { fg = C.surface1, bg = C.red, style = { "bold" }  }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+	
 		TabLine = { bg = C.mantle, fg = C.surface1 }, -- tab pages line, not active tab page label
 		TabLineFill = {}, -- tab pages line, where there are no labels
 		TabLineSel = { fg = C.green, bg = C.surface1 }, -- tab pages line, active tab page label
