@@ -21,12 +21,12 @@ function M.get()
     SignColumnSB = { bg = "#010101", fg = C.surface1 },                               -- column where |signs| are displayed
     Substitute = { bg = C.surface1, fg = U.vary_color({ latte = C.red }, C.pink) },   -- |:substitute| replacement text highlighting
     LineNr = { fg = C.surface1, bg = C.crust },                                       -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-    CursorLineNr = { fg = C.lavender },                                               -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line. highlights the number in numberline.
+    CursorLineNr = { fg = C.surface0 },                                               -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line. highlights the number in numberline.
     MatchParen = { fg = C.peach, bg = C.surface1, style = { "bold" } },               -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     ModeMsg = { fg = C.crust, style = { "bold" } },                                   -- 'showmode' message (e.g., "-- INSERT -- ")
     MsgArea = { fg = C.crust, bg = C.lavender, style = { "bold" } },                  -- Area for messages and cmdline, don't set this highlight because of https://github.com/neovim/neovim/issues/17832
     MsgSeparator = {},                                                                -- Separator for scrolled messages, `msgsep` flag of 'display'
-    MoreMsg = { fg = C.blue },                                                        -- |more-prompt|
+    MoreMsg = { fg = C.surface0 },                                                        -- |more-prompt|
     NonText = { fg = C.overlay0 },                                                    -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal = { fg = C.text, bg = O.transparent_background and C.none or C.base },     -- normal text
     NormalNC = {
