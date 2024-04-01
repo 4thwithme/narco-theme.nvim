@@ -17,8 +17,8 @@ function M.get()
     VertSplit = { fg = O.transparent_background and C.surface1 or C.crust },          -- the column separating vertically split windows
     Folded = { fg = C.blue, bg = O.transparent_background and C.none or C.surface1 }, -- line used for closed folds
     FoldColumn = { fg = C.overlay0 },                                                 -- 'foldcolumn'
-    SignColumn = { fg = C.surface1, bg = C.crust },                                   -- column where |signs| are displayed
-    SignColumnSB = { bg = C.crust, fg = C.surface1 },                                 -- column where |signs| are displayed
+    SignColumn = { fg = C.surface1, bg = "#010101" },                                 -- column where |signs| are displayed
+    SignColumnSB = { bg = "#010101", fg = C.surface1 },                               -- column where |signs| are displayed
     Substitute = { bg = C.surface1, fg = U.vary_color({ latte = C.red }, C.pink) },   -- |:substitute| replacement text highlighting
     LineNr = { fg = C.surface1, bg = C.crust },                                       -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     CursorLineNr = { fg = C.lavender },                                               -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line. highlights the number in numberline.
