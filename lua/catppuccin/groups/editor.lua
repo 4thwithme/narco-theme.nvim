@@ -23,7 +23,7 @@ function M.get()
     LineNr = { fg = C.surface1, bg = C.crust },                                       -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     CursorLineNr = { fg = C.lavender },                                               -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line. highlights the number in numberline.
     MatchParen = { fg = C.peach, bg = C.surface1, style = { "bold" } },               -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
-    ModeMsg = { fg = C.text, style = { "bold" } },                                    -- 'showmode' message (e.g., "-- INSERT -- ")
+    ModeMsg = { fg = C.crust, style = { "bold" } },                                   -- 'showmode' message (e.g., "-- INSERT -- ")
     MsgArea = { fg = C.crust, bg = C.lavender, style = { "bold" } },                  -- Area for messages and cmdline, don't set this highlight because of https://github.com/neovim/neovim/issues/17832
     MsgSeparator = {},                                                                -- Separator for scrolled messages, `msgsep` flag of 'display'
     MoreMsg = { fg = C.blue },                                                        -- |more-prompt|
@@ -66,10 +66,10 @@ function M.get()
     TabLine = { bg = C.mantle, fg = C.surface1 },                       -- tab pages line, not active tab page label
     TabLineFill = {},                                                   -- tab pages line, where there are no labels
     TabLineSel = { fg = C.green, bg = C.surface1 },                     -- tab pages line, active tab page label
-    Title = { fg = C.blue, style = { "bold" } },                        -- titles for output from ":set all", ":autocmd" etc.
+    Title = { fg = "#332E3F", style = { "bold" } },                     -- titles for output from ":set all", ":autocmd" etc.
     Visual = { bg = C.surface1, style = { "bold" } },                   -- Visual mode selection
     VisualNOS = { bg = C.surface1, style = { "bold" } },                -- Visual mode selection when vim is "Not Owning the Selection".
-    WarningMsg = { fg = C.text },                                       -- warning messages
+    WarningMsg = { fg = C.crust, style = { "italic" } },                -- warning messages
     Whitespace = { fg = C.surface1 },                                   -- "nbsp", "space", "tab" and "trail" in 'listchars'
     WildMenu = { bg = C.overlay0 },                                     -- current match in 'wildmenu' completion
     WinBar = { fg = C.rosewater },
