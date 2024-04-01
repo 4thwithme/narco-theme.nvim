@@ -38,7 +38,7 @@ function M.get()
     },                                                                                                             -- normal text in non-current windows
     NormalSB = { fg = C.text, bg = C.crust },                                                                      -- normal text in non-current windows
     NormalFloat = { fg = C.text, bg = (O.transparent_background and vim.o.winblend == 0) and C.none or C.mantle }, -- Normal text in floating windows.
-    FloatBorder = { fg = C.blue },
+    FloatBorder = { fg = C.overlay0 },
     FloatTitle = { fg = C.subtext0 },                                                                              -- Title of floating windows
     Pmenu = {
       bg = (O.transparent_background and vim.o.pumblend == 0) and C.none or U.darken(C.surface0, 0.8, C.crust),
@@ -47,7 +47,7 @@ function M.get()
     PmenuSel = { bg = C.surface1, style = { "bold" } },                -- Popup menu: selected item.
     PmenuSbar = { bg = C.surface1 },                                   -- Popup menu: scrollbar.
     PmenuThumb = { bg = C.overlay0 },                                  -- Popup menu: Thumb of the scrollbar.
-    Question = { fg = C.blue },                                        -- |hit-enter| prompt and yes/no questions
+    Question = { fg = C.overlay0 },                                        -- |hit-enter| prompt and yes/no questions
     QuickFixLine = { bg = C.surface1, style = { "bold" } },            -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
     Search = { bg = U.darken(C.sky, 0.30, C.base), fg = C.text },      -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
     IncSearch = { bg = U.darken(C.sky, 0.90, C.base), fg = C.mantle }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
